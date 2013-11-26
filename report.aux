@@ -1,0 +1,27 @@
+\relax 
+\select@language{english}
+\@writefile{toc}{\select@language{english}}
+\@writefile{lof}{\select@language{english}}
+\@writefile{lot}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Symbol sequence extraction}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Extend the simu\_symbol function to simulate a third digit, select for instance a "6"}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Consider the [{\it  compute\_symbol}] function to transform one digit in a sequence of symbols}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Now let us consider [{\it  compute\_symbol\_dir}] to transform one digit in a sequence of symbols}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Selection of a HMM topology and initial values}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Give a graphical representation of this model}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces An HMM with 3 states which can emit 10 symbols $c$. In this particular HMM, states can only reach themselves or the next state. Each state can emit any symbol.}}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}How would you initialise the vector of initial probabilities, and the state transition matrix, knowing that the length of the sequences are T = 30?}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}How about the observation matrix?}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Training of the models}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Create a first function {\it  initHMMDigit} which takes as input the number of states and of possible observations, and initialise the transition matrix with a left-right architecture and with uniform distribution of observations from each state}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Have a look at the different models after training. Do they make sense for you?}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Select a specific model of digit, and consider the symbols that will be most often emitted during states 1, 2 and 3}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Recognition performances}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Use the corresponding test files, and run the forward algorithm to build the confusion matrix for these four cases, display the global recognition rates}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Replace \IeC {\textquotedblleft }the optimal initial values\IeC {\textquotedblright } of the models by uniform values (in initHMMDigit). Redo the training and check the new corresponding results}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Keep the best initialisations, and repeat these same experiences with different number of states, and try to find the optimal number of states}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Classifier combination}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Sum rule}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Borda count}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Train a ANN using the normalized (in [-1,1]) observations as inputs and combine it with HMM thanks to on of the previous rule}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Attachments}{8}}
